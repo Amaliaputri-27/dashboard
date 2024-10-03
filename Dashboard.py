@@ -12,7 +12,7 @@ st.write("Email: m384b4kx0446@bangkit.academy")
 st.write("ID Dicoding: aleailearn")
 
 # Memuat Data
-data = pd.read_csv(r'C:\Users\amali\Downloads\Bike sharing dataset - proyek\day.csv')
+data = pd.read_csv('day.csv')
 
 # Menambahkan kolom baru untuk membedakan hari kerja dan akhir pekan
 data['is_weekend'] = data['weekday'].apply(lambda x: 1 if x >= 5 else 0)
